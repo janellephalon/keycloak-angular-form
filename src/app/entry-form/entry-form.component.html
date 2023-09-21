@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="title">Entry Form</div>
+  <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+    <div class="user-details">
+      <div class="input-box" *ngFor="let field of formFields" [class.full-width]="field.name === 'tenantName'">
+        <span class="details">{{ field.label }}</span>
+        <input [type]="field.type" [placeholder]="field.placeholder" [formControlName]="field.name" required>
+      </div>
+      <button type="submit" class="btn">Register</button>
+    </div>
+  </form>
+</div>
