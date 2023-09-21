@@ -22,7 +22,6 @@ export class EntryFormComponent implements OnInit {
   ngOnInit(): void {
     this.entryForm = this.fb.group({
       tenantName: ['', Validators.required],
-      tenantID: [''],
       adminEmail: [''],
       adminPhone: [''],
       password: [''],
