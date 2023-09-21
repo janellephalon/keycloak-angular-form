@@ -33,7 +33,7 @@ export class EntryFormComponent implements OnInit {
   onSubmit() {
     if (this.entryForm.valid) {
       console.log(this.entryForm.value);
-      // Handle form submission logic here
+      this.entryForm.reset();
     }
   }
 }
