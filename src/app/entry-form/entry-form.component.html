@@ -4,7 +4,7 @@
     <div class="user-details">
       <div class="input-box" *ngFor="let field of formFields" [class.full-width]="field.name === 'tenantName'">
         <span class="details">{{ field.label }}</span>
-        <input [type]="field.type" [placeholder]="field.placeholder" [formControlName]="field.name" required>
+        <input [type]="field.type" [placeholder]="field.placeholder" [formControlName]="field.name" [required]="field.name === 'tenantName'">
       </div>
       <button type="submit" class="btn">Register</button>
     </div>

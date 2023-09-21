@@ -22,11 +22,11 @@ export class EntryFormComponent implements OnInit {
   ngOnInit(): void {
     this.entryForm = this.fb.group({
       tenantName: ['', Validators.required],
-      tenantID: ['', Validators.required],
-      adminEmail: ['', [Validators.required, Validators.email]],
-      adminPhone: ['', Validators.required],
-      password: ['', Validators.required],
-      confirmPassword: ['', Validators.required],
+      tenantID: [''],
+      adminEmail: [''],
+      adminPhone: [''],
+      password: [''],
+      confirmPassword: [''],
     });
   }
 
